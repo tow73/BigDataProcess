@@ -40,8 +40,9 @@ for i in range(a_plus):
 for i in range(a + 1, b_plus + 1):
 	row = l[i][1]
 	ws['H' + str(row)] = 'B+'
-for i in range(b + 1, len(l) // 2 + 1):
-	row = l[i][1]
-	ws['H' + str(row)] = 'C+'
+for i in range(b + 1, ((len(l) - a - b) // 2) + b + 1):
+	if ws['H' + str(row)].value >= 40:
+		row = l[i][1]
+		ws['H' + str(row)] = 'C+'
 
 wb.save('student.xlsx')
