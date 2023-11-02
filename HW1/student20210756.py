@@ -25,12 +25,12 @@ a_plus = a // 2
 b_plus = (b + a) // 2
 
 for i, (total, row) in enumerate(l):
-	if total < 40:
-		ws['H' + str(row)] = 'F'
-	elif i < a:
+	if i < a:
 		ws['H' + str(row)] = 'A'
 	elif a <= i < b:
 		ws['H' + str(row)] = 'B'
+	else:
+		ws['H' + str(row)] = 'C'
 
 for i in range(a_plus):
 	row = l[i][1]
