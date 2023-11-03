@@ -35,10 +35,10 @@ for i, (total, row) in enumerate(l):
 for i in range(a_plus):
 	row = l[i][1]
 	ws['H' + str(row)] = 'A+'
-for i in range(a + 1, b_plus + 1):
+for i in range(a, b_plus):
 	row = l[i][1]
 	ws['H' + str(row)] = 'B+'
-for i in range(b + 1, (len(l) + b) // 2 + 1):
+for i in range(b, (len(l) + b) // 2):
 	row = l[i][1]
 	ws['H' + str(row)] = 'C+'
 for row in range(2, ws.max_row + 1):
