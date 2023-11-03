@@ -23,6 +23,7 @@ a = int(len(l) * 0.3)
 b = int(len(l) * 0.7)
 a_plus = a // 2
 b_plus = (b + a) // 2
+c_plus = (len(l) + b) // 2
 
 for i, (total, row) in enumerate(l):
 	if i < a:
