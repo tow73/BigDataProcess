@@ -25,8 +25,8 @@ with open(input_file, 'r') as file:
 		data[num][week]['trip'] += int(trip)
 
 with open(output_file, 'w') as output:
-	for num, day in data.items():
-		for day, value in day.items():
+	for num, day_inform in data.items():
+		for day, value in day_inform.items():
 			day_name = weekday_code[day]
 			vehicle = value['vehicle']
 			trip = value['trip']
