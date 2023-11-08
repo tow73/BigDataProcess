@@ -30,5 +30,5 @@ with open(output_file, 'w') as output:
 			day_name = weekday_code[day]
 			vehicle = value['vehicle']
 			trip = value['trip']
-			output_l = f"{num}, {day_name} {vehicle}, {trip}\n"
+			output_l = f"{num},{day_name} {vehicle},{trip}\n"
 			output.write(output_l)
